@@ -1,0 +1,29 @@
+/******************************************************************************
+FERNANDO GUTIERREZ TREJO
+Codigo IoT 
+Programa que imprima: 0001, 0010, 0100, 1000 y vuelva a repetir
+Nota: Para que deje de ejecutarse el programa presionar "cntrl + c"
+*******************************************************************************/
+#include <stdio.h> //biblioteca
+
+int main() //funcion principal
+{
+    //variables
+    int a=0; 
+    int b=0;
+    int c=0;
+    int f=1;
+    
+   //for repite infinitamente su contenido
+    for(;;){
+        
+    //impresion de numeros    
+    printf("%d%d%d%d\n", a, b, c, f);
+    printf("%d%d%d%d\n", a, b, f, c);
+    printf("%d%d%d%d\n", a, f, b, c);
+    printf("%d%d%d%d\n", f, a, b, c);
+    
+    }
+    
+    return 0;
+}
